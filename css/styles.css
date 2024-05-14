@@ -70,6 +70,11 @@ img {
     margin-top: 20px;
 }
 
+.portrait {
+    max-width: 550px;
+}
+
+
 .process img {
     padding: 24px 8px;
 }
