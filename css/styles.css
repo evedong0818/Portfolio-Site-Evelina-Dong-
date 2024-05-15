@@ -12,11 +12,11 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
     box-sizing: border-box;
 }
 
+
 header {
-    background-color: rgba(175, 131, 134, 0.8);
-    padding: 10px 0 4px;
-    position: relative;
-    box-shadow: 0px 6px 10px 0px rgba(20,58,82,0.5);
+    background-color: rgba(175, 131, 134, 0.5);
+    padding: 16px 0;
+    text-align: center; /* Centers text */
 }
 
 body {
@@ -166,7 +166,7 @@ nav > ul {
 nav > ul > li > a {
     padding: 0 5px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 550;
     color: #143a52;
     position: relative;
     z-index: 0;
@@ -384,6 +384,42 @@ nav > ul > li > a:active {
     height: auto;
 }
 
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+
 #goTop {
     display: inline-block;
     width: 100%;
@@ -406,3 +442,371 @@ nav > ul > li > a:active {
 }
 
 
+/* Medium devices (640px) */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 10px 0;
+    }
+    main {
+        padding-top: 80px;
+    }    
+    nav {
+        width: auto;
+        float: right;
+    }
+    nav > ul {
+        margin: 1em 0;
+        display: inline-block;
+    }
+    nav > ul > li {
+        display: inline-block
+    }
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #hero {
+        text-align: center;
+    }
+    #hero span {
+        display: block;
+    }
+    [class*="col-"] {
+        column-gap: 50px;
+    }    
+    .col-md-6 {
+        width: 50%;
+        align-self: flex-start;
+    }
+    .col-md-8 {
+        width: 60%;
+        padding: 10px 20px 10px 10px;
+    }
+    #prototype .col-md-8 {
+        padding: 10px 0 10px 20px;
+    }
+    .col-md-4 {
+        width: 40%;
+        padding: 20px;
+    }
+    .col-md-3 {
+        width: 25%;
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .col-md-9 {
+        width: 75%;
+        padding: 20px;
+    }
+    #prototype .col-md-4 {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .col-md-4 img {
+        max-width: 400px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 100%;
+        margin: auto;
+    }    
+    #profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #profile img {
+        max-width: 400px;
+        border-radius: 100%;
+        margin: auto;
+    }
+    .nav-button {
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+    }
+    .navtoggle.responsive li {
+        all: unset;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+      }
+    .logo {
+        max-width: 48px;
+        padding-top: 9px;
+    }      
+    .section {
+        padding: 0 1%;
+    }
+    .section:hover,
+    .section:focus {
+        padding: 0 20px;
+    }       
+    .navtoggle.responsive nav{
+        all: unset;
+        width: auto;
+        float: right;
+    }
+    .navtoggle.responsive li:hover {
+        all: unset;
+    }
+    .container {
+        padding: 0 60px;
+    }
+    div.right-column {
+        padding-right: 20px;
+    }
+    div.left-column {
+        padding-left: 20px
+    }
+}
+
+/* Medium devices (640px) */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 10px 0;
+    }
+    main {
+        padding-top: 80px;
+    }    
+    nav {
+        width: auto;
+        float: right;
+    }
+    nav > ul {
+        margin: 1em 0;
+        display: inline-block;
+    }
+    nav > ul > li {
+        display: inline-block
+    }
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #hero {
+        text-align: center;
+    }
+    #hero span {
+        display: block;
+    }
+    [class*="col-"] {
+        column-gap: 50px;
+    }    
+    .col-md-6 {
+        width: 50%;
+        align-self: flex-start;
+    }
+    .col-md-8 {
+        width: 60%;
+        padding: 10px 20px 10px 10px;
+    }
+    #prototype .col-md-8 {
+        padding: 10px 0 10px 20px;
+    }
+    .col-md-4 {
+        width: 40%;
+        padding: 20px;
+    }
+    .col-md-3 {
+        width: 25%;
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .col-md-9 {
+        width: 75%;
+        padding: 20px;
+    }
+    #prototype .col-md-4 {
+        justify-content: space-around;
+        align-items: center;
+    }
+    .col-md-4 img {
+        max-width: 400px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 100%;
+        margin: auto;
+    }    
+    #profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #profile img {
+        max-width: 400px;
+        border-radius: 100%;
+        margin: auto;
+    }
+    .nav-button {
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+    }
+    .navtoggle.responsive li {
+        all: unset;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+      }
+    .logo {
+        max-width: 48px;
+        padding-top: 9px;
+    }      
+    .section {
+        padding: 0 1%;
+    }
+    .section:hover,
+    .section:focus {
+        padding: 0 20px;
+    }       
+    .navtoggle.responsive nav{
+        all: unset;
+        width: auto;
+        float: right;
+    }
+    .navtoggle.responsive li:hover {
+        all: unset;
+    }
+    .container {
+        padding: 0 60px;
+    }
+    div.right-column {
+        padding-right: 20px;
+    }
+    div.left-column {
+        padding-left: 20px
+    }
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+  
+    main {
+      font-size: 18px;
+    }
+  
+    .menu {
+      display: block;
+      width: 400px;
+      float: right;
+      margin-top: 20px;
+    }
+  
+    #hero span {
+      display: block;
+    }
+  
+    .col-md-4 {
+      width: 40%;
+    }
+  
+    .col-md-6 {
+      width: 60%;
+    }
+  
+    .col-md-5 {
+      width: 50%;
+    }
+  
+  
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
+  
+    nav > ul > li {
+      display: inline-block;
+    }
+  
+    nav > ul {
+      margin: 1em 0;
+    }
+  
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+  
+    .navtoggle li:last-child {
+      display: none;
+    }
+    
+  
+    #skills-tools h3 { margin-top: 0;}
+  
+    #my-story h2 { margin-top: 0;}
+  }
+  
+  
+  
+  
+  /* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+  
+    main {
+      font-size: 18px;
+    }
+  
+    .col-lg-6 {
+      width: 60%;
+    }
+  
+    .col-lg-4 {
+      width: 40%;
+    }
+  
+    .col-lg-5 {
+      width: 50%;
+    }
+  
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
+  
+    nav > ul > li {
+      display: inline-block;
+    }
+  
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+}
