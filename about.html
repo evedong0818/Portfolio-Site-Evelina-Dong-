@@ -1,100 +1,116 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
     <meta name="author" content="Evelina Dong">
-    <meta name="description" content="UX UI design portfolio, Bio">
+    <meta name="description" content="SUX UI design portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>About Evelina Dong</title>
-</head>
-
-<body>
-
-    <header>
-        <div>
-            <h1>Evelina Dong</h1>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Portfolio Site Evelina | About page</title>
+  </head>
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="img/Logo.png" class="logo" alt="Logo" >
+            </a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </nav>
-        </div>
-    </header>
+		</div>
+	</header>
 
     <main>
-        <div>
-            <div>
-                <h1>About</h1>
+        <!-- For the hero section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+                <h1>About me</h1>
+                <p>
+                    My passions include snow boarding, hiking, and travel. I’m also love scuba diving, my dream is to swim with wale shark.
+                    As someone who has always been passionate about understanding human behavior and creating meaningful experiences, I found myself drawn to the dynamic field of UX design. It merges my love for problem-solving with a deep appreciation for empathy-driven design principles.
+                </p>
             </div>
         </div>
-        <div>
-            <div>
-                <picture>
-                    <source srcset="image_Evelina_600px_1x">
-                    <img src="img/image_Evelina_600px_2x.jpg" alt="Evelinadong">
-                </picture>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
                 <div>
-                    <div>
-                        <h2>My Story</h2>
-                        <p>Hello and welcome! My name is Evelina Dong, and I am thrilled to share my journey and portfolio with you. 
-                            As someone who has always been passionate about understanding human behavior and creating meaningful experiences, I found myself drawn to the dynamic field of UX design.
-                            It merges my love for problem-solving with a deep appreciation for empathy-driven design principles. 
-                            The opportunity to craft products and services that not only meet user needs but delight and inspire them, is what truly motivates me in this profession.
-                        </p>
-                            <a href="files/temporary-cv.pdf" target="_blank">Download My Resume</a>
-
-                    </div>
-                    <div>
-                        <h2>Skills &amp; Tools</h2>
-                        <div>
-                            <div>
-                                <h3>Relevant Skills</h3>
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
+                            <h2>My Story</h2>
+                            <img src="img/portrait.png" alt="Portrait image of Evelina Dong" style="float: right; width: 35%; margin-left: 20px;">
+                            <p>Hello and welcome! My name is Evelina Dong, and I am thrilled to share my journey and portfolio with you. As someone who has always been passionate about understanding human behavior and creating meaningful experiences, I found myself drawn to the dynamic field of UX design. It merges my love for problem-solving with a deep appreciation for empathy-driven design principles. The opportunity to craft products and services that not only meet user needs but delight and inspire them, is what truly motivates me in this profession.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="center"><a href="files/temporary-cv.pdf" target="_blank" class="button secondary">Download My Resume</a></div>
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Skills</h3>
                                 <ul>
-                                    <li>User research (Competitor analysis, interviews, data analysis)</li>
-                                    <li>Interaction design (User Flows, wireframes, site maps, prototypes)</li>
-                                    <li>UI/Visual design</li>
-                                    <li>Frontend development (HTML, CSS, JavaScript)</li>
-                                    <li>Strong interpersonal and communication skills</li>
-                                </ul>
+                                        <li>User research</li>
+                                        <li>Interaction design</li>
+                                        <li>UI/Visual design</li>
+                                        <li>Frontend development</li>
+                                        <li>Communication skills</li>
+                                    </ul>
                             </div>
-                            <div>
-                                <h3>Tools I Use</h3>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Tools I use</h3>
                                 <ul>
                                     <li>Figma</li>
                                     <li>Github</li>
-                                </ul>  
+                                    <li>VS Code</li>
+                                    <li>HTMl &amp; CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </main>
     
-    <footer id="contact">
-        <div>
-            <h2>Get in Touch</h2>
-
-            <p>Please contact me if you have any questions or would like to work with me</p>
-
-            <div><a href="">Email me</a></div>
-
-            <div>     <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
-                <img src="img/linkedin-icon.svg" alt="linkedin.">
-            </a>
-             <a href="https://www.behance.net/evelinadong" target="_blank">
-                <img src="img/behance-icon.svg" alt="behance.">
-                </a>
+  <!-- For the footer  -->
+	<footer id="contact" style="clear: both;">
+		<div class="container">
+            <h2>Get in touch</h2>
+            <p>Please contact me if you have any questions or would like to work with me.</p> 
+            <p>Prefer sending an email?</p>
+            <div>
+                <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
             </div>
-
-            <div>Copyright Evelina Dong 2024</div>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+            <!--For students, the images below should be updated with real svgs and links should be updated-->
+                <li>
+                    <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
+                        <img src="img/linkedin-icon.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/evelinadong" target="_blank">
+                        <img src="img/behance-icon.svg" alt="Behance">
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright Evelina Dong 2024</p>
         </div>
-    </footer>
-</body>
+        
+	</footer>
+  </body>
 </html>

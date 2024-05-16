@@ -1,31 +1,92 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
     <meta name="author" content="Evelina Dong">
-    <meta name="description" content="UX UI design portfolio">
+    <meta name="description" content="SUX UI design portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Portfolio Site Evelina</title>
-</head>
-<body>
-    <header >
-        <div>
-            <h1>Evelina Dong</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <title>Portfolio Site Evelina</title>
+  </head>
+  <body id="index-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="img/Logo.png" class="logo" alt="Logo" "">
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li class="active"><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+		</div>
+	</header>
 
-    <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <main>
+        <!-- For the hero section -->
+        <div id="hero">
+            <div class="container">
+                <h1>HELLO!<span>I’m Evelina, a UX Designer based in New Jersey.</span></h1>
+            </div>
+        </div>
+
+        <!-- For your work/projects -->
+        <div id="work">
+            <div class="container">
+                <div>
+                    <h2>My Work</h2>
+                </div>
+                <!--Project One-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="img/vela/vela-homepage.png" media="(max-width:767px)">
+                      <img src="img/vela/vela-homepage.png" alt="The cover image for VELA.">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>VELA</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      A weather tracking app, a better way of monitoring weather data to water sport enthusiasts to ensure they are as safe as possible while doing what they love.
+                    </p><!-- end paragraph -->
+                    <a href="velacasestudy.html" class="button">Read more</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+                
+                <!--Project Two-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class=" col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                      <img src="http://via.placeholder.com/1200x800" alt="The cover image for TOMO.">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>TOMO</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      Tomo is a language learning app for mastering Japanese. Whether users are learning for travel, work, or pure passion, Tomo is the trusted guide to mastering the Japanese language.
+                    </p><!-- end paragraph -->
+                    <a href="#" class="button">Read more</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+
+                <!--Project Three-->
+                <div class="row"><!-- open row that holds (2) columns for project -->
+                  <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <div class="svg-animation">
+                        <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
         </defs>
@@ -624,49 +685,47 @@
             <path fill="#1A232C" d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"></path>
         </g>
     </svg>
-    <main>
-        <div>
-                <h2>HELLO!</h2>
-                <h3>I’m Evelina, a UX Designer based in New Jersey.</h3>
-                <p>
-                    My passions include snow boarding, hiking, and travel. I’m also love scuba diving, my dream is to swim with wale shark.
-                    As someone who has always been passionate about understanding human behavior and creating meaningful experiences, I found myself drawn to the dynamic field of UX design. It merges my love for problem-solving with a deep appreciation for empathy-driven design principles.
-                </p>
-                <h2>My Work</h2>
+                    </div>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>Project three</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p><!-- end paragraph -->
+                    <a href="#" class="button">Read more</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
             </div>
-                    <h3>VELA</h3>
-                    <a href="velacasestudy.html">View project</a>
-                    <img src="img/vela/vela-homepage.png" 
-                    alt="The cover image for VELA.">
-                    <p>A weather tracking app, a better way of monitoring weather data to water sport enthusiasts to ensure they are as safe as possible while doing what they love.</p>
-                    
-                </div>       
-                <div>
-                    <h3>TOMO</h3>
-                    <img src="https://placehold.co/600x400"
-                        alt="The cover image for TOMO.">
-                    <p>Tomo is a language learning app for mastering Japanese. Whether users are learning for travel, work, or pure passion, Tomo is the trusted guide to mastering the Japanese language.</p>
-                    <a href="#">View project</a>
         </div>
     </main>
-    <footer id="contact">
-        <div>
-            <h2>Get in Touch</h2>
-            <p>Please contact me if you have any questions or would like to work with me</p>
-            <div><a href="">Email me</a></div>
-            <div>     <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
-                <img
-                class="logo"
-                    src="img/linkedin-icon.svg" alt="linkedin.">
-                </a>
-                 <a href="https://www.behance.net/evelinadong" target="_blank">
-                <img
-                class="logo"
-                    src="img/behance-icon.svg" alt="behance.">
-                </a>
+
+
+<!-- For the footer  -->
+	<footer id="contact">
+		<div class="container">
+            <h2>Get in touch</h2>
+            <p>Please contact me if you have any questions or would like to work with me.</p> 
+            <p>Prefer sending an email?</p>
+            <div>
+                <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
             </div>
-            <div>Copyright Evelina Dong 2024</div>
+            <ul class="social">
+            <!--Social Media Layout and Placeholders-->
+            <!--For students, the images below should be updated with real svgs and links should be updated-->
+                <li>
+                    <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
+                        <img src="img/linkedin-icon.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/evelinadong" target="_blank">
+                        <img src="img/behance-icon.svg" alt="Behance">
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright Evelina Dong 2024</p>
         </div>
-    </footer>
-</body>
+        
+	</footer>
+  </body>
 </html>
