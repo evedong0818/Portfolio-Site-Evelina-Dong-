@@ -144,10 +144,14 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
   
   /*style the <header> element*/
   header {
-    background-color: rgba(175, 131, 134, 0.5);
+    background-color: #af8386;
+    position: fixed;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    width: 100%;
     box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
   }
   
@@ -161,6 +165,7 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
   /*Navigation Styling*/
   nav {
     display: inline-block;
+    width: 100%;
   }
   
   nav > ul {
@@ -168,16 +173,48 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
     padding: 0;
   }
   
-  nav > ul > li {
-    display: inline-block;
-  }
-  
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 400;
+    color: #030404;
+    text-decoration: none;
   }
+  
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+  
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #ABD1C9;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+
+
   
   #hero {
     background-color: #ffe4c4;
@@ -209,9 +246,13 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
     margin-left: 10px;
   }
   
-  .social img {
+  #social img {
     height: 42px;
     width: 42px;
+  }
+
+  .logo {
+  width: 3;
   }
   /*--------------------------------------------End Section---------------------------------------------*/
   /*-------------------------------------------Start Section---------------------------------------------*/
@@ -300,30 +341,160 @@ Highlight Color-2 (Rosy Brown): #af8386 or rgb(175,131,134);
   }
   
   /* ==============================
-  Medium devices (640px and larger)
+  Medium devices (641px and larger)
   ================================= */
-  @media only screen and (min-width: 640px) {
-    body {
-      font-size: 18px;
+  @media only screen and (min-width: 641px) {
+    .container-text {
+      max-width: 1100px;
+      margin: 0 auto;
     }
-      
+  
+    .container-text-2 {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+  
+    .flex-container-5 {
+      display: flex;
+      border: 2px solid;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 0 200px 100px;
+    }
+  
     header {
       text-align: unset;
-      padding: 20px 0 13px;
+      padding: 0 0 4px;
     }
   
     nav {
       width: auto;
       float: right;
+      margin-top: 4px;
     }
-      
+  
+    .imagesize {
+      display: inline-block;
+      width: 20%;
+    }
+  
+    .img-size-5 {
+      display: inline-block;
+      width: 60%;
+    }
+  
+    .imagesize-about {
+      display: inline-block;
+      width: 80%;
+    }
+  
+    #hero span {
+      display: block;
+    }
+  
     .col-md-6 {
       width: 50%;
-      float: left;
-      padding-bottom: 40px;
     }
-      
+  
+    [class*="col-"] {
+      float: left;
+      padding: 10px;
+    }
+  
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+    nav > ul > li {
+      display: inline-block;
+    }
+  
+    nav > ul {
+      margin: 1em 0;
+    }
+  
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
+  
+    .navtoggle li:last-child {
+      display: none;
+    }
+  
+    .flex-container-3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .flex-container-4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+  
+    .item {
+      align-self: center;
+    }
+  
+    .item-1 {
+      margin-left: 80px;
+    }
+  
+    .item-2 {
+      margin-right: 50px;
+    }
+  
+    /* contact page */
+  
+    .container-contact {
+      margin: 50px 180px;
+      display: flex;
+      align-items: center;
+    }
+  
+    input[type=text] select textarea {
+      width: 800px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+  
+    input[type=email] {
+      width: 800px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+  
+    .resume-row-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 20px 200px;
+    }
+  
+    .resume-box {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      align-items: center;
+      border: 2px solid;
+    }
   }
+  
   
   
   /* ==============================
