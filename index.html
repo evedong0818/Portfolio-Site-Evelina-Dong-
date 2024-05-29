@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Evelina Dong">
-    <meta name="description" content="SUX UI design portfolio">
+    <meta name="description" content="UX UI design portfolio - index page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/fav/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -14,23 +14,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca39e0c221.js" crossorigin="anonymous"></script>
-
     <title>Portfolio Site Evelina</title>
+    </head>
+    <body id="index-page">
+    <!-- For the header -->
     <header>
       <!-- For the navigation -->
       <div class="container">
-        <div class="navtoggle" id="myNavtoggle"></div>
-              <a href="index.html">
-         <img src="img/Logo.png" class="logo" alt="Logo" style="float: top; width: 15%;">
-              </a>
-              <nav>
-                <ul class="navigation">
-                  <li class="active"><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-              </nav>
+              <div class="navtoggle" id="myNavtoggle">
+                  <a href="index.html">
+                    <img src="img/Logo.png" class="logo" alt="Logo" style="float: top; width: 15%;">
+                  </a >
+                  <nav>
+                    <ul class="navigation">
+                      <li class="active"><a href="index.html">Work</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                      <li>
+                          <p id="click_advance">
+                              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                              <i class="fas fa-bars"></i>
+                              </a >
+                          </p >
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
       </div>
     </header>
 
@@ -115,9 +124,7 @@
         
 	</footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-      <script src="js/scripts.js"></script>
-  
-    </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
 </html>
