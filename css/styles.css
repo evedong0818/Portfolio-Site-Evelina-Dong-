@@ -78,17 +78,17 @@ a:hover {
 
 /*style the current nav item green*/
 .active a {
-    color: #af8386;
+    color: #ffe4c4;
 }
 
 a:active { /* selected link */
-  color: #af8386;
+  color: #ffe4c4;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
 a:hover,
 a:focus {
-  color: #af8386;
+  color: #ffe4c4;
   text-decoration: none;
 }
 
@@ -235,6 +235,11 @@ nav {
   display: block;
 }
 
+footer {
+    text-align: center;
+    clear: both;
+}
+
 #contact {
     background-color: #f2f2f2;
     padding: 20px;
@@ -242,21 +247,14 @@ nav {
 
 
 /*Style the social icons*/
-.social {
-  list-style-type: none;
-  padding: 0;
-  margin-left: -10px;
+.social-icon {
+  height: 64px;
+  width: 64px;
+  margin-top: 12px;
 }
 
-.social li {
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.social img{
-  height: 32px;
-  width: 32px;
+.social-menu {
+    text-align: center;
 }
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/

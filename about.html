@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">    
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Evelina Dong">
-    <meta name="description" content="UX UI design portfolio">
+    <meta name="description" content="UX UI design portfolio - index page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/fav/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -13,26 +15,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca39e0c221.js" crossorigin="anonymous"></script>
-
-    <title>Portfolio Site Evelina | About page</title>
-</head>
-<body id="index-page">
-  <!-- For the header -->
-  <header>
+    <title>Portfolio Site Evelina</title>
+    </head>
+    <body id="index-page">
+    <!-- For the header -->
+    <header>
       <!-- For the navigation -->
       <div class="container">
-        <div class="navtoggle" id="myNavtoggle"></div>
-              <a href="index.html">
-         <img src="img/Logo.png" class="logo" alt="Logo" style="float: top; width: 15%;">
-              </a>
-              <nav>
-                <ul class="navigation">
-                  <li><a href="index.html">Work</a></li>
-                  <li class="active"><a href="about.html">About</a></li>
-                  <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
-                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-              </nav>
+              <div class="navtoggle" id="myNavtoggle">
+                  <a href="index.html">
+                    <img src="img/Logo.png" class="logo" alt="Logo">
+                  </a >
+                  <nav>
+                    <ul class="navigation">
+                      <li><a href="index.html">Work</a></li>
+                      <li class="active"><a href="about.html">About</a></li>
+                      <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                      <li>
+                          <p id="click_advance">
+                              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                              <i class="fas fa-bars"></i>
+                              </a >
+                          </p >
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
       </div>
     </header>
     
@@ -89,37 +97,35 @@
     </main>
     
 <!-- For the footer  -->
-<footer id="contact" style="clear: both;">
-    <div class="container">
-            <h2>Get in touch</h2>
-            <p>Please contact me if you have any questions or would like to work with me.</p> 
-            <p>Prefer sending an email?</p>
-            <div>
-                <a href="mailto:evedong0818@gmail.com" class="button contact">Email me</a>
-            </div>
-            
-            <!--Social Media Layout and Placeholders-->
-            <!--For students, the images below should be updated with real svgs and links should be updated-->
-                
-                    <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
-                        <img src="img/linkedin-icon.svg" alt="linkedin "  style="width: 6%;">
-                    </a>
-                
+<footer id="contact">
+  <div class="container">
+          <h2>Get in touch</h2>
+          <p>Please contact me if you have any questions or would like to work with me.</p> 
+          <p>Prefer sending an email?</p>
+          <div>
+              <a href="mailto:evedong0818@gmail.com" class="button contact">Email me</a>
+          </div>
           
-                    <a href="https://www.behance.net/evelinadong" target="_blank">
-                        <img src="img/behance-icon.svg" alt="Behance";   style="width: 6%;">
-                    </a>
-                
-            
-            <p>Copyright Evelina Dong 2024</p>
-        </div>
+          <!--Social Media Layout and Placeholders-->
+          <!--For students, the images below should be updated with real svgs and links should be updated-->
+             <div class="social-menu"> 
+                  <a href="https://www.linkedin.com/in/evelina-dong-/" target="_blank">
+                      <img class="social-icon" src="img/linkedin-icon.svg" alt="LinkedIn">
+                  </a>
+              
         
-  </footer>
-  
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                  <a href="https://www.behance.net/evelinadong" target="_blank">
+                      <img class="social-icon" src="img/behance-icon.svg" alt="Behance">
+                  </a>
+            </div>
+              
+          
+          <p>Copyright Evelina Dong 2024</p>
+      </div>
+        
+	</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
-  
-  </body>
-  </html>
-  
+</body>
+</html>
